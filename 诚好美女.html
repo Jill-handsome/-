@@ -1,0 +1,90 @@
+from flask import Flask, render_template_string
+
+app = Flask(__name__)
+
+poem_html = """
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致诚好</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+     .poem-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+     .poem-title {
+            font-size: 24px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+     .poem-content {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="poem-container">
+        <h1 class="poem-title">致诚好</h1>
+        <div class="poem-content">
+            在时光长河悠然流淌，<br>
+            有个名字如星光闪亮，<br>
+            诚好，恰似春日的暖阳，<br>
+            绽放在我心的每一寸地方。<br><br>
+
+            她的眼眸，似深邃海洋，<br>
+            藏着星辰，泛着温柔波光，<br>
+            睫毛轻颤，像蝶翼舒张，<br>
+            扇动的微风，吹进我心房。<br><br>
+
+            那弯弯的眉，似月牙清朗，<br>
+            浅笑时，嘴角梨涡荡漾，<br>
+            仿佛是命运精心的雕章，<br>
+            刻画出这绝美的模样。<br><br>
+
+            她的秀发，如乌瀑飞扬，<br>
+            散发着梦幻的迷人芬芳，<br>
+            每一步轻盈，似音符奏响，<br>
+            在岁月里谱出优雅乐章。<br><br>
+
+            诚好啊，你是美的诗行，<br>
+            在尘世闪耀独特的光芒，<br>
+            愿时光温柔把你守望，<br>
+            让你的美，永恒地绽放。 
+        </div>
+    </div>
+</body>
+
+</html>
+"""
+
+
+@app.route('/')
+def display_poem():
+    return render_template_string(poem_html)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
