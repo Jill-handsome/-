@@ -34,14 +34,12 @@
     <div class="text-content">
         最近一个名叫江晏的游戏角色频频出圈，该角色出自网易于去年年底公测的名为燕云十六声的联机武侠大世界探索游戏。
           <style>
-          .image-container img {
-              width: 1500px; /* 图片宽度为 400 像素 */
-              height: auto; /* 自动计算高度，保持比例 */ }</style>
+          .image-container img {width: 1500px; height: auto;  }</style>
           <div class="image-container">
           <img src="images/jiangyan.jpg" alt="江晏">
                     <div class="text-content" style="color: #666;">   
                      江晏有着多重身份。从血缘关系论，他是天泉弟子江远之子 。义父王清同样是天泉中人，在江远战死后收养了江晏。投身江湖后，他是燕北盟的一员，曾随义父抗击契丹。中渡桥之战后，义父王清惨被梦傀毒术 “复活”，江晏无奈忍痛了结义父，这一行为却遭人误解，背上 “弑父夺位” 的骂名，为躲避追杀，他化名 “江无浪”。
-                     此后，江晏带着王清的遗孤（即游戏主角）踏上逃亡之路。游戏一开场，便是江晏抱着襁褓中的主角燕十六，与好友于重重追杀中夺命奔逃。最后在神仙渡隐姓埋名，以养父的身份教导主角功夫。后江晏突然离去，踪迹成谜。主角只得孤身踏入江湖，但江晏过往的身份秘密与江湖恩怨，始终如影随形 。​
+                     此后，江晏带着王清的遗孤（即游戏主角）踏上逃亡之路。游戏一开场，便是江晏抱着襁褓中的主角燕十六，与好友于重重追杀中夺命奔逃。最后在神仙渡隐姓埋名，以养父的身份教导主角。后江晏突然离去，踪迹成谜。主角只得孤身踏入江湖，但江晏过往的身份秘密与江湖恩怨，始终如影随形 。​
                         <div id="myDiv">【点击此处即欣赏江晏帅气打斗身姿】</div>
                         <script>
                           function redirectToLink(url) { window.location.href = url; }
@@ -53,10 +51,7 @@
     然而江晏在该游戏中的出场总时长甚至没有十分钟，却有着奇高的热度。
     </div>
     <style>
-    .image-container img {
-        width: 400px; /* 图片宽度为 400 像素 */
-        height: auto; /* 自动计算高度，保持比例 */ }
-    </style>
+             .image-container img {width: 400px; height: auto; }</style></div>
     
     <div class="image-container">
 
@@ -83,8 +78,20 @@
     </div>
 
     <div class="text-content">
-        许多人都说江晏不仅仅是一个游戏的官方角色，还是由同人二创一同丰满起来的人物。我在b站搜索江晏，无论是最多播放、最多弹幕、最多收藏还是综合排序，出现的都是关于江晏的二创作品。<br>
-        为了探究江晏的魅力所在，我爬取了b站江晏话题下弹幕以及收藏数最多的一个视频，来进行了一些浅显的相关分析。
-    </div>
+        实际上，江晏不仅仅是一个游戏官方的角色，还是由同人二创一同丰满起来的人物。我们完全可以认为江晏的角色塑造是由官方和玩家共同塑造的。
+        倘若在b站搜索江晏，无论是最多播放、最多弹幕、最多收藏还是综合排序，出现的都是关于江晏的衍生二创作品。
+        为了探究江晏的魅力所在，我爬取了b站江晏话题下弹幕以及收藏数最多的一个原创视频，来进行了一些浅显的相关分析。
+           <div id="myDiv">【点击此处即欣赏原视频】</div>
+           <script>
+           function redirectToLink(url) { window.location.href = url; }
+             document.getElementById("myDiv").onclick = function() { redirectToLink('https://www.bilibili.com/video/BV1AMfyYpEma/?spm_id_from=333.337.search-card.all.click&vd_source=c8f592ceb2de5290769a94d9dc77c34e');};</script>
+        通过该视频，一共爬取到了2000条弹幕。将弹幕数据进行清洗、分词操作后，分别生成了以下词云图及矩形树图：
+            <style>
+             .image-container img {width: 400px; height: auto; }</style></div>
+            <div class="image-container">
+                <img src="images/词云图1.png" alt="词云图1">
+                <img src="images/矩形树图1.png" alt="矩形树图">
+            </div>
+    
 </body>
 </html>
